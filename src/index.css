@@ -1,0 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&display=swap");
+
+html { font-family: "Manrope", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; }
+
+/* small helper to smooth transitions */
+.carousel-item {
+  transition: transform .45s ease, opacity .45s ease;
+}
