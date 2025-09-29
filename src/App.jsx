@@ -118,10 +118,10 @@ function FeatureCard({ f }) {
             </div>
 
             <nav className="hidden md:flex items-center space-x-8">
-              <a className="text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-primary transition-colors" href="#">Features</a>
-              <a className="text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-primary transition-colors" href="#">Use Cases</a>
-              <a className="text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-primary transition-colors" href="#">Testimonials</a>
-              <a className="text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-primary transition-colors" href="#">Pricing</a>
+              <a className="text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-primary transition-colors" href="/">Home</a>
+              <a className="text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-primary transition-colors" href="/usecases">Use Cases</a>
+              <a className="text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-primary transition-colors" href="/story">Testimonials</a>
+              <a className="text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-primary transition-colors" href="/pricing">Pricing</a>
             </nav>
 
             <div className="flex items-center space-x-4">
@@ -134,8 +134,8 @@ function FeatureCard({ f }) {
                 )}
               </button>
 
-              <a className="hidden sm:inline-block px-5 py-2.5 text-sm font-semibold rounded-lg text-primary hover:bg-primary/10 dark:hover:bg-primary/20 transition-colors" href="#">Log In</a>
-              <a className="px-5 py-2.5 text-sm font-semibold rounded-lg text-white bg-primary hover:opacity-90 transition-opacity" href="#">Request Demo</a>
+              <a className="hidden sm:inline-block px-5 py-2.5 text-sm font-semibold rounded-lg text-primary hover:bg-primary/10 dark:hover:bg-primary/20 transition-colors" href="/login">Log In</a>
+              <a className="px-5 py-2.5 text-sm font-semibold rounded-lg text-white bg-primary hover:opacity-90 transition-opacity" href="/signup">SignUp</a>
             </div>
           </div>
         </div>
@@ -149,8 +149,8 @@ function FeatureCard({ f }) {
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white leading-tight tracking-tight">The Future of Retail is Conversational</h1>
               <p className="mt-6 text-lg sm:text-xl text-slate-300 max-w-2xl mx-auto">Our AI Sales Agent unifies your online and in-store experience, driving sales and customer loyalty 24/7.</p>
               <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
-                <a className="w-full sm:w-auto px-8 py-3.5 text-base font-semibold rounded-lg text-white bg-primary hover:opacity-90 transition-opacity transform hover:scale-105" href="#">Get Started for Free</a>
-                <a className="w-full sm:w-auto px-8 py-3.5 text-base font-semibold rounded-lg text-white bg-white/20 backdrop-blur-sm hover:bg-white/30 transition-colors transform hover:scale-105" href="#">Watch a Demo</a>
+                <a className="w-full sm:w-auto px-8 py-3.5 text-base font-semibold rounded-lg text-white bg-primary hover:opacity-90 transition-opacity transform hover:scale-105" href="/signup">Get Started for Free</a>
+                <a className="w-full sm:w-auto px-8 py-3.5 text-base font-semibold rounded-lg text-white bg-white/20 backdrop-blur-sm hover:bg-white/30 transition-colors transform hover:scale-105" href="/commingsoon">Watch a Demo</a>
               </div>
             </div>
           </div>
@@ -179,7 +179,7 @@ function FeatureCard({ f }) {
         </section>
 
         {/* Channels */}
-        <section className="py-20 sm:py-28 bg-white dark:bg-card-dark/20">
+        <section className="py-20 sm:py-28 bg-white dark:bg-card-dark/100">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
               <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-slate-900 dark:text-white">Powering Every Customer Interaction</h2>
@@ -222,7 +222,7 @@ function FeatureCard({ f }) {
             <h2 className="text-3xl sm:text-4xl font-extrabold text-white">Ready to Revolutionize Your Retail Experience?</h2>
             <p className="mt-4 text-lg text-white/80 max-w-2xl mx-auto">Join the future of retail. Get started with our AI Conversational Sales Agent today.</p>
             <div className="mt-8">
-              <a className="px-10 py-4 text-lg font-semibold rounded-lg text-primary bg-white hover:bg-slate-100 transition-colors transform hover:scale-105 inline-block" href="#">Request a Free Demo</a>
+              <a className="px-10 py-4 text-lg font-semibold rounded-lg text-primary bg-white hover:bg-slate-100 transition-colors transform hover:scale-105 inline-block" href="/commingsoon">Request a Free Demo</a>
             </div>
           </div>
         </section>

@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&display=swap");
+
+
+/* force background always light */
+html, body {
+  background-color: var(--background-light) !important;
+  color: var(--text-light-primary) !important;
+}
+
+/* disable dark theme variables */
+.dark {
+  background-color: var(--background-light) !important;
+  color: var(--text-light-primary) !important;
+}
+
+:root {
+  --background-light: #ffffff;
+  --background-dark: #d4ddf1;
+  --sidebar-light: #F9FAFB;
+  --sidebar-dark: #1c684800;
+  --text-light-primary: #1F2937;
+  --text-dark-primary: #F9FAFB;
+  --text-light-secondary: #000000;
+  --text-dark-secondary: #9CA3AF;
+  --border-light: #E5E7EB;
+  --border-dark: #374151;
+  --brand-primary: #111827;
+  --brand-primary-dark: #FFFFFF;
+  --brand-secondary-light: #F3F4F6;
+  --brand-secondary-dark: #374151;
+  --user-bubble-light: #1F2937;
+  --user-bubble-dark: #F9FAFB;
+  --user-bubble-text-light: #FFFFFF;
+  --user-bubble-text-dark: #1F2937;
+  --ai-bubble-light: #F3F4F6;
+  --ai-bubble-dark: #d7d9dc;
+}
+
+/* ensure font used for chat page */
+html, body {
+  font-family: "Manrope", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+/* optional: make scrollbars subtle in dark mode */
+.dark ::-webkit-scrollbar {
+  height: 12px;
+  width: 12px;
+
+}
+.dark ::-webkit-scrollbar-thumb {
+  background: rgba(255,255,255,0.05);
+  border-radius: 9999px;
+}
