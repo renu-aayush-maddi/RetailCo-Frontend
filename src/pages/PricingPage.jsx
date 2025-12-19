@@ -13,7 +13,7 @@ export default function PricingPage() {
   return (
     <div>
       {/* Header (your exact pattern) */}
-      <header className="fixed top-0 left-0 right-0 z-50 bg-white/80 dark:bg-background-dark/80 backdrop-blur-sm shadow-sm">
+      {/* <header className="fixed top-0 left-0 right-0 z-50 bg-white/80 dark:bg-background-dark/80 backdrop-blur-sm shadow-sm">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-20">
             <div className="flex items-center space-x-3">
@@ -56,7 +56,7 @@ export default function PricingPage() {
             </div>
           </div>
         </div>
-      </header>
+      </header> */}
 
       {/* Pricing content */}
       <main className="pt-20 bg-background-light dark:bg-background-dark font-display text-gray-800 dark:text-gray-200">

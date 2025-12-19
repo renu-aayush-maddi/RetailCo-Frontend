@@ -12,10 +12,10 @@ export default function UseCasesPage() {
   return (
     <div>
       {/* Header */}
-      <header className="fixed top-0 left-0 right-0 z-50 bg-white/80 dark:bg-background-dark/80 backdrop-blur-sm shadow-sm">
+      {/* <header className="fixed top-0 left-0 right-0 z-50 bg-white/80 dark:bg-background-dark/80 backdrop-blur-sm shadow-sm">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-20">
-            {/* Logo */}
+            
             <div className="flex items-center space-x-3">
               <svg
                 className="h-8 w-8 text-primary"
@@ -38,7 +38,7 @@ export default function UseCasesPage() {
               </h1>
             </div>
 
-            {/* Nav */}
+            
             <nav className="hidden md:flex items-center space-x-8">
               <a
                 href="/"
@@ -66,7 +66,7 @@ export default function UseCasesPage() {
               </a>
             </nav>
 
-            {/* Right Actions */}
+            
             <div className="flex items-center space-x-4">
               <button
                 onClick={() => setDarkMode((d) => !d)}
@@ -118,7 +118,7 @@ export default function UseCasesPage() {
             </div>
           </div>
         </div>
-      </header>
+      </header> */}
 
       {/* Main Content */}
       <main className="pt-20 bg-background-light dark:bg-background-dark">

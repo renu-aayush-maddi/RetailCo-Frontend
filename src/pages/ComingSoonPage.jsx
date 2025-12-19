@@ -12,7 +12,7 @@ export default function ComingSoonPage() {
   return (
     <div className="flex flex-col min-h-screen">
       {/* Header (exact code you supplied) */}
-      <header className="fixed top-0 left-0 right-0 z-50 bg-white/80 dark:bg-background-dark/80 backdrop-blur-sm shadow-sm">
+      {/* <header className="fixed top-0 left-0 right-0 z-50 bg-white/80 dark:bg-background-dark/80 backdrop-blur-sm shadow-sm">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-20">
             <div className="flex items-center space-x-3">
@@ -43,7 +43,7 @@ export default function ComingSoonPage() {
             </div>
           </div>
         </div>
-      </header>
+      </header> */}
 
       {/* Page content */}
       <main className="flex-grow pt-24 px-4">

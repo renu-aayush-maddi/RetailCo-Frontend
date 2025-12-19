@@ -1,53 +1,50 @@
-@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&display=swap");
-
-
-/* force background always light */
-html, body {
-  background-color: var(--background-light) !important;
-  color: var(--text-light-primary) !important;
+.typing-dots {
+  display: inline-flex;
+  gap: 6px;
+  align-items: center;
 }
-
-/* disable dark theme variables */
-.dark {
-  background-color: var(--background-light) !important;
-  color: var(--text-light-primary) !important;
-}
-
-:root {
-  --background-light: #ffffff;
-  --background-dark: #d4ddf1;
-  --sidebar-light: #F9FAFB;
-  --sidebar-dark: #1c684800;
-  --text-light-primary: #1F2937;
-  --text-dark-primary: #F9FAFB;
-  --text-light-secondary: #000000;
-  --text-dark-secondary: #9CA3AF;
-  --border-light: #E5E7EB;
-  --border-dark: #374151;
-  --brand-primary: #111827;
-  --brand-primary-dark: #FFFFFF;
-  --brand-secondary-light: #F3F4F6;
-  --brand-secondary-dark: #374151;
-  --user-bubble-light: #1F2937;
-  --user-bubble-dark: #F9FAFB;
-  --user-bubble-text-light: #FFFFFF;
-  --user-bubble-text-dark: #1F2937;
-  --ai-bubble-light: #F3F4F6;
-  --ai-bubble-dark: #d7d9dc;
-}
-
-/* ensure font used for chat page */
-html, body {
-  font-family: "Manrope", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
-}
-
-/* optional: make scrollbars subtle in dark mode */
-.dark ::-webkit-scrollbar {
-  height: 12px;
-  width: 12px;
-
-}
-.dark ::-webkit-scrollbar-thumb {
-  background: rgba(255,255,255,0.05);
+.typing-dots .dot {
+  width: 6px;
+  height: 6px;
   border-radius: 9999px;
+  background: rgba(0,0,0,0.35);
+  display: inline-block;
+  animation: dotPulse 1s infinite ease-in-out;
+}
+.typing-dots .dot:nth-child(2) { animation-delay: 0.15s; }
+.typing-dots .dot:nth-child(3) { animation-delay: 0.3s; }
+@keyframes dotPulse {
+  0%, 80%, 100% { transform: scale(0.6); opacity: .5; }
+  40% { transform: scale(1); opacity: 1; }
+}
+
+
+/* Scoped theme just for the chat page */
+.retailco-theme {
+  --background-light: #0b1222; /* keep dark navy background */
+  --sidebar-light: #ffffff;
+  --border-light: #e5e7eb;
+  --text-light-secondary: #94a3b8;
+
+  --brand-primary: #1193d4;
+  --brand-secondary-light: #e6f6ff;
+
+  /* Bubbles */
+  --ai-bubble-light: #1e293b;   /* dark slate grey */
+  --user-bubble-light: #2563eb; /* softer blue, not neon */
+}
+
+
+/* dark variant (optional) */
+.retailco-theme.dark {
+  --background-light: #0b1222;
+  --sidebar-light: #0e1730;
+  --border-light: #1f2a44;
+  --text-light-secondary: #94a3b8;
+
+  --brand-primary: #1193d4;
+  --brand-secondary-light: #0f172a;
+
+  --ai-bubble-light: #121a33;
+  --user-bubble-light: #2563eb;
 }
